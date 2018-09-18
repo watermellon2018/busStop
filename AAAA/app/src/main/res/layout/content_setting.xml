@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ytka.aaaa.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="top|center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="Мой аватар: "
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/smail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/smail"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:layout_marginRight="5dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/duck"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/duck"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

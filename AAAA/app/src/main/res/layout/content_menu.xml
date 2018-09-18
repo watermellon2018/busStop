@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ytka.aaaa.MenuActivity"
+    tools:showIn="@layout/activity_menu">
+
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center|center"
+        android:background="@drawable/background1"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/smail"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            />
+
+        <Button
+            android:layout_width="250dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content"
+
+            android:drawableLeft="@drawable/lupamic"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="italic"
+
+            android:id="@+id/historyOfSearch"
+            android:text="@string/history"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            android:drawableLeft="@drawable/isbtruemic"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="italic"
+
+            android:id="@+id/favor"
+            android:text="@string/favourites"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/nastmic"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="italic"
+
+            android:id="@+id/settings"
+            android:text="@string/settings"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            android:drawableLeft="@drawable/infomic"
+            android:gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/background_light"
+            android:textSize="22sp"
+            android:textStyle="italic"
+
+            android:id="@+id/aboutUs"
+            android:text="@string/about"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

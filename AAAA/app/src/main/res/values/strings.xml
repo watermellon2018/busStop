@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AAAA</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="where">Откуда?</string>
+    <string name="somewhere">Куда?</string>
+    <string name="buildPath">Дорогу покажешь?</string>
+    <string name="returnToMap">Назад</string>
+    <string name="myLocation">Я</string>
+    <string name="menu">Меню</string>
+    <string name="search">Поиск</string>
+    <string name="favourites">Избранное</string>
+    <string name="addAlarm">Добавить</string>
+    <string name="information">Информация</string>
+
+    <!--Из кнопки меню-->
+    <string name="history">История поиска</string>
+    <string name="settings">Настройки</string>
+    <string name="about">О нас</string>
+
+    <string name="backFromMenu">Назад</string>
+    <string name="backFromFavorList">Назад</string>
+    <string name="empty">Присмотрите за котом</string>
+
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_favor">FavorActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+
+    <string name="abuoutUs"> Простите, мы не успели заполнить это окно :(  \n Но зато здесь есть панда</string>
+</resources>

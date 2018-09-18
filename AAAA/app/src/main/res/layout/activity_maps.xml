@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.ytka.dontsleep.MapsActivity">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right|top"
+                android:background="@drawable/lupa"
+                android:layout_margin="10dp"
+                android:id="@+id/searchPath"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/menu"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/vty" />
+
+
+            <LinearLayout
+                android:id="@+id/menuForInputData"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:visibility="gone">
+
+                <!--Чтобы поставить строку для ввода и кнопку Я в ряд-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="0.85"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/where"
+                    android:text="Мое местоположение"
+                    android:id="@+id/beginTarget"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mylocation"
+                        android:padding="3dp"
+                        android:id="@+id/myLocation"
+                        android:layout_weight="0.15"/>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/somewhere"
+                    android:text="Уфа "
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/endTarget"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/build"
+                    android:id="@+id/buildPath"/>
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/back"
+                        android:id="@+id/returnToMap"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/PanelForDrive"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone">
+
+                <ToggleButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:background="@drawable/isbfalse"
+                    android:id="@+id/addToFavor"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/alarmadd"
+                    android:id="@+id/addAlarm"/>
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/info"
+                    android:id="@+id/info"/>
+
+            </LinearLayout>
+
+        </fragment>
+
+</LinearLayout>
